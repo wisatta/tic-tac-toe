@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+                <div class="header">
+                    <h2>
+                        Tic Tac Toe
+                    </h2>
+                </div>
+        </header>
+
+        <main>
+            <div class="main">
+                <div class="area-wrapper">
+                    <div class="area">
+                        <div class="box top left"></div>
+                        <div class="box top"></div>
+                        <div class="box top rght"></div>
+                        <div class="box left"></div>
+                        <div class="box"></div>
+                        <div class="box rght"></div>
+                        <div class="box btm left"></div>
+                        <div class="box btm"></div>
+                        <div class="box btm rght"></div>
+                    </div>
+            </div>
+
+            <div class="info">
+                Turn for &nbsp;<span id="currentPlayer">X</span>
+            </div>
+
+            <div class="btn">
+                <button id="btn">Reset Game</button>
+            </div>
+        
+            <div id="modal-result">
+                <div id="overlay"></div>
+                <div id="modal-window">
+                    <div id="content"></div>
+                    <div class="img">
+                        <img src="assets/win.gif" alt="cat">
+                    </div>
+                    <div id="btn-close">
+                        Start New Game
+                    </div>
+                </div>
+            </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-items">   
+                <span>© 2022</span>
+                <a href="https://rs.school/js/" target="_blank" id="rs" class="hover">Rolling Scopes</a>
+                <a href="https://github.com/wisatta" target="_blank" class="hover"><p><span>wisatta</span></p></a>  
+            </div>
+        </footer>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
