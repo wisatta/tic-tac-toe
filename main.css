@@ -145,7 +145,7 @@ footer {
     align-items: center;
 }
 
-#content {
+#content, .steps {
     color: black;
 }
 

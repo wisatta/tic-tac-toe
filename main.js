@@ -9,6 +9,9 @@ const btn = document.getElementById('btn');
 const info = document.querySelector('.info');
 let currentPlayer = document.getElementById('currentPlayer');
 const header = document.querySelector('.header');
+const steps = document.querySelector('.steps');
+let count = 0;
+
 
 // Fill the box 
 
@@ -17,7 +20,8 @@ area.addEventListener('click', e => {
             if (e.target.className = 'box') {
                 // console.log(e.target);
                 move % 2 === 0 ? e.target.innerHTML = 'X' : e.target.innerHTML = 'O';
-                move++;  
+                move++;
+                count++;
                 check();
                 changeTurn();
                 playAudio()
@@ -25,6 +29,7 @@ area.addEventListener('click', e => {
         } else {
             alert('The box is already filled');
         }
+        counter();
 })  
 
 // Who is the winner
@@ -129,4 +134,10 @@ function playAudio() {
   audio.src = 'assets/click.mp3'
   audio.currentTime = 0;
   audio.play();
+}
+
+// Steps
+
+const counter = () => {
+    steps.innerText = `Steps: ${count}`;
 }
